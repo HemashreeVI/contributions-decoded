@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "Contributions Decoded",
+  "version": "1.0.0",
+  "description": "Explains any GitHub profile's contributions in plain English: what the green squares, '+5,310 −0', commits, pull requests and 'merged' actually mean.",
+  "content_scripts": [{ "matches": ["https://github.com/*"], "js": ["content.js"], "run_at": "document_idle" }],
+  "web_accessible_resources": [{ "resources": ["panel.css", "icons/32.png"], "matches": ["https://github.com/*"] }],
+  "permissions": ["storage"],
+  "icons": { "16": "icons/16.png", "32": "icons/32.png", "48": "icons/48.png", "128": "icons/128.png" }
+}
